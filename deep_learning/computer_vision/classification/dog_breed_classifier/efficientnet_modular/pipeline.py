@@ -1,5 +1,8 @@
 """The pipeline for deep learning process."""
 import torch
+from efficientnet_modular.efficientnet_model import efficientnet_model
+from efficientnet_modular.train import train
+from efficientnet_modular.load_kaggle import load_kaggle
 def process(device: torch.device="cuda",
             num_classes: int=5,
             batch_size: int=32,

@@ -9,7 +9,7 @@ from torchvision.transforms import v2
 from torchvision import datasets
 from torch.utils.data import DataLoader, Dataset, Subset, random_split
 import kagglehub
-
+from efficientnet_modular.remap_subset import remap_subset
 def load_kaggle(data_root="data/",
                 dataset_name="miljan/stanford-dogs-dataset-traintest",
                 num_classes=None,

@@ -1,7 +1,6 @@
 """Transfer Learning model instantiation using efficientnet.v2"""
 import torchvision
 from torchvision import models
-import torch
 import torch.nn as nn
 
 def efficientnet_model(num_classes: int, 

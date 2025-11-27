@@ -4,6 +4,10 @@ from tqdm import tqdm
 from timeit import default_timer as timer
 import torch
 import torch.nn as nn
+from efficientnet_modular.plot_results import plot_results
+from efficientnet_modular.train_step import train_step
+from efficientnet_modular.eval_step import eval_step
+from efficientnet_modular.early_stopping import early_stopping
 def train(model: torch.nn.Module, 
           train_dataloader: torch.utils.data.DataLoader, 
           val_dataloader: torch.utils.data.DataLoader, 
